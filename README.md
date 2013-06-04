@@ -5,7 +5,7 @@ Tools and code for studying admissible sequences for the polymath8 project.
 
 First of all, try:
 
-    ./sbt "run-main polymath.RichardsSequenceApp"
+    ./sbt "run-main polymath.RichardsSequenceApp 341640"
 
 which should find the first Richards-Henley sequence of size 341,640, and
 report that it has width 4,802,222. There's a long delay after it prints 'trying
