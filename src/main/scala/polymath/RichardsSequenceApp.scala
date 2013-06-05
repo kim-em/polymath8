@@ -1,5 +1,9 @@
 package polymath
 
+import java.io.PrintWriter
+import java.io.FileOutputStream
+import java.io.File
+
 object RichardsSequenceApp extends App {
   import Admissible._
 
@@ -9,4 +13,8 @@ object RichardsSequenceApp extends App {
   println("m = " + m)
   val s = RichardsSequence(m, k)
   println("width = " + s.width)
+  
+  val out = new PrintWriter(new FileOutputStream(new File("rh")))
+  for(n <- s) out.println(n)
+  out.close
 }
