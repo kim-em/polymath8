@@ -19,3 +19,5 @@ You can ask for other sizes, e.g.
 
 Later, there will hopefully be some interesting code for sieving and
 annealing.
+
+There's a python port of some of this code at https://github.com/avi-levy/dhl
