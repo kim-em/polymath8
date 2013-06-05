@@ -13,15 +13,14 @@ class AdmissibleTest extends FlatSpec with ShouldMatchers {
 
       Set(0,2).isAdmissible should equal(true)
       
-      RichardsSequence(5).take(10).isAdmissible should equal(true)
-      RichardsSequence(5).take(10).isAdmissible should equal(true)
+      HenleyRichardsResidueSequence(10,5).isAdmissible should equal(true)
   }
   
   "isAdmissible" should "reject inadmissible sequences" in {	  
       import Admissible._
 
       Set(0,1).isAdmissible should equal(false)
-      RichardsSequence(5).take(100).isAdmissible should equal(false)
+      HenleyRichardsResidueSequence(100,5).isAdmissible should equal(false)
   }
   
 }
